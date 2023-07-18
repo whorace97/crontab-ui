@@ -7,8 +7,8 @@ RUN   mkdir /crontab-ui; touch $CRON_PATH/root; chmod +x $CRON_PATH/root
 
 WORKDIR /crontab-ui
 
-LABEL maintainer "@alseambusher"
-LABEL description "Crontab-UI docker"
+LABEL maintainer "@whorace97"
+LABEL description "Crontab-UI docker with ubuntu as base"
 
 RUN   apk --no-cache add \
       wget \
