@@ -3,7 +3,7 @@ FROM ubuntu:22.04
 
 ENV   CRON_PATH /etc/crontabs
 
-RUN   mkdir /crontab-ui; touch $CRON_PATH/root; chmod +x $CRON_PATH/root
+RUN   mkdir /crontab-ui; mkdir $CRON_PATH; touch $CRON_PATH/root; chmod +x $CRON_PATH/root
 
 WORKDIR /crontab-ui
 
